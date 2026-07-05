@@ -1,8 +1,25 @@
 // 1. Deposit Money in the slot machine
 // 2. Determine the number of lines to bet on
 // 3. How much the user is betting on slot machine. Collect bet money.
+// 4. Spin the slot machine.
 
 const prompt = require("prompt-sync")();
+
+const ROWS = 3;
+const COLS = 3;
+const SYMBOLS_COUNT = {
+    "A" : 2,
+    "B" : 4,
+    "C" : 6,
+    "D" : 8
+}
+
+const SYMBOL_VALUES = {
+    "A" : 5,
+    "B" : 4,
+    "C" : 3,
+    "D" : 2
+}
 
 const deposit = () => {
     while(true){
@@ -48,7 +65,21 @@ const getBet = (balance, lines) => {
     }
 }
 
+const spin = () => {
+    const symbols = [];
+    for (const [symbol, count] of Object.entries(SYMBOLS_COUNT)){
+        for (let i = 0; i < count; i++){
+            symbols.push(symbol)
+        }
+    }
+        const reels = [[], [], []]
+        for (let i=0; i < COLS; i++){
+            for(let j = 0; j< ROWS; j++){
+                
+            }
+        }
+};
+spin();
 const numberOfLines = getNumberOfLines();
 let balance = deposit();
 const bet = getBet(balance, numberOfLines);
-    

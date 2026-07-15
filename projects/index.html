@@ -1,33 +1,78 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content ="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">        <link rel="stylesheet" href="style.css">
-        <title>To-Do</title>	
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do App</title>
 </head>
 
 <body>
-<div class="todo-container">
-	<div class="pending-tasks">
-	<h1>Upcoming Tasks</h1>
-	<ul id="pending-task-list">
-		<button class = "delete-task-btn">🗑️Delete Task</button>
 
-	</ul>
-	</div>
-	<div class="completed-tasks">
-	<h1>Completed Tasks</h1>
-	<ul id="completed-task-list">
-	
-	</ul>
-	</div>
-	
-	</div>
-	<div id="add-new-task"> 
-		<button class = "add-task-btn">Add new Task</button>
+    <div class="todo-container">
 
-</div>
+        <div class="pending-tasks">
+            <h1>Upcoming Tasks</h1>
+
+            <ul id="pending-task-list">
+
+                <li class="task">
+                    <input type="checkbox">
+
+                    <span class="task-name">
+                        Learn HTML
+                    </span>
+
+                    <button class="delete-task-btn">
+                        🗑️
+                    </button>
+                </li>
+
+                <li class="task">
+                    <input type="checkbox">
+
+                    <span class="task-name">
+                        Build To-Do App
+                    </span>
+
+                    <button class="delete-task-btn">
+                        🗑️
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="completed-tasks">
+
+            <h1>Completed Tasks</h1>
+
+            <ul id="completed-task-list">
+
+                <li class="task completed">
+
+                    <input type="checkbox" checked>
+
+                    <span class="task-name">
+                        Install VS Code
+                    </span>
+
+                    <button class="delete-task-btn">
+                        🗑️
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <button class="add-task-btn">
+        +
+    </button>
 
 </body>
-	
+</html>
